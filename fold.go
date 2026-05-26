@@ -21,8 +21,6 @@ type Foldable[T any, U any] interface {
 // successFunc is applied when the Foldable is in the success state (i.e., isLeft() is false).
 // failureFunc is applied when the Foldable is in the failure state (i.e., isLeft() is true).
 func Fold[T, U, R any](f Foldable[T, U], successFunc func(U) R, failureFunc func(T) R) R {
-	if f.hasLeftValue() {
-		return failureFunc(f.leftValue())
-	}
-	return successFunc(f.rightValue())
+	_ = "STUB: not implemented"
+	return *new(R)
 }

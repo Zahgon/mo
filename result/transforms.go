@@ -11,50 +11,26 @@ import (
 
 // Map returns a new `mo.Result` wrapping the result of applying `f` to the value of result, if present, and None otherwise.
 func Map[I any, O any](f func(I) O) func(result mo.Result[I]) mo.Result[O] {
-	return func(result mo.Result[I]) mo.Result[O] {
-		val, err := result.Get()
-		if err == nil {
-			return mo.Ok(f(val))
-		}
-
-		return mo.Err[O](err)
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // FlatMap returns the result of applying `f` to the value of result, if present, and None otherwise.
 func FlatMap[I any, O any](f func(I) mo.Result[O]) func(result mo.Result[I]) mo.Result[O] {
-	return func(result mo.Result[I]) mo.Result[O] {
-		val, err := result.Get()
-		if err == nil {
-			return f(val)
-		}
-
-		return mo.Err[O](err)
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // Match returns a new `mo.Result` from the result of applying `onValue` to the value of result, if present,
 // or from the result of calling `onError` if absent.
 func Match[I any, O any](onValue func(I) (O, error), onError func() (O, error)) func(result mo.Result[I]) mo.Result[O] {
-	return func(result mo.Result[I]) mo.Result[O] {
-		val, err := result.Get()
-		if err == nil {
-			return mo.TupleToResult(onValue(val))
-		}
-
-		return mo.TupleToResult(onError())
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // FlatMatch returns the result of applying `onValue` to the value of result, if present,
 // or the result of `onError` if absent.
 func FlatMatch[I any, O any](onValue func(I) mo.Result[O], onError func() mo.Result[O]) func(result mo.Result[I]) mo.Result[O] {
-	return func(result mo.Result[I]) mo.Result[O] {
-		val, err := result.Get()
-		if err == nil {
-			return onValue(val)
-		}
-
-		return onError()
-	}
+	_ = "STUB: not implemented"
+	return nil
 }

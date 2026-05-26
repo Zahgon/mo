@@ -6,9 +6,8 @@ func Pipe1[A any, B any](
 	source mo.Option[A],
 	operator1 func(mo.Option[A]) mo.Option[B],
 ) mo.Option[B] {
-	return operator1(
-		source,
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe2[A any, B any, C any](
@@ -16,11 +15,8 @@ func Pipe2[A any, B any, C any](
 	operator1 func(mo.Option[A]) mo.Option[B],
 	operator2 func(mo.Option[B]) mo.Option[C],
 ) mo.Option[C] {
-	return operator2(
-		operator1(
-			source,
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe3[A any, B any, C any, D any](
@@ -29,11 +25,8 @@ func Pipe3[A any, B any, C any, D any](
 	operator2 func(mo.Option[B]) mo.Option[C],
 	operator3 func(mo.Option[C]) mo.Option[D],
 ) mo.Option[D] {
-	return operator3(
-		operator2(
-			operator1(source),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe4[A any, B any, C any, D any, E any](
@@ -43,13 +36,8 @@ func Pipe4[A any, B any, C any, D any, E any](
 	operator3 func(mo.Option[C]) mo.Option[D],
 	operator4 func(mo.Option[D]) mo.Option[E],
 ) mo.Option[E] {
-	return operator4(
-		operator3(
-			operator2(
-				operator1(source),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe5[A any, B any, C any, D any, E any, F any](
@@ -60,15 +48,8 @@ func Pipe5[A any, B any, C any, D any, E any, F any](
 	operator4 func(mo.Option[D]) mo.Option[E],
 	operator5 func(mo.Option[E]) mo.Option[F],
 ) mo.Option[F] {
-	return operator5(
-		operator4(
-			operator3(
-				operator2(
-					operator1(source),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe6[A any, B any, C any, D any, E any, F any, G any](
@@ -80,17 +61,8 @@ func Pipe6[A any, B any, C any, D any, E any, F any, G any](
 	operator5 func(mo.Option[E]) mo.Option[F],
 	operator6 func(mo.Option[F]) mo.Option[G],
 ) mo.Option[G] {
-	return operator6(
-		operator5(
-			operator4(
-				operator3(
-					operator2(
-						operator1(source),
-					),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe7[A any, B any, C any, D any, E any, F any, G any, H any](
@@ -103,19 +75,8 @@ func Pipe7[A any, B any, C any, D any, E any, F any, G any, H any](
 	operator6 func(mo.Option[F]) mo.Option[G],
 	operator7 func(mo.Option[G]) mo.Option[H],
 ) mo.Option[H] {
-	return operator7(
-		operator6(
-			operator5(
-				operator4(
-					operator3(
-						operator2(
-							operator1(source),
-						),
-					),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe8[A any, B any, C any, D any, E any, F any, G any, H any, I any](
@@ -129,21 +90,8 @@ func Pipe8[A any, B any, C any, D any, E any, F any, G any, H any, I any](
 	operator7 func(mo.Option[G]) mo.Option[H],
 	operator8 func(mo.Option[H]) mo.Option[I],
 ) mo.Option[I] {
-	return operator8(
-		operator7(
-			operator6(
-				operator5(
-					operator4(
-						operator3(
-							operator2(
-								operator1(source),
-							),
-						),
-					),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe9[A any, B any, C any, D any, E any, F any, G any, H any, I any, J any](
@@ -158,23 +106,8 @@ func Pipe9[A any, B any, C any, D any, E any, F any, G any, H any, I any, J any]
 	operator8 func(mo.Option[H]) mo.Option[I],
 	operator9 func(mo.Option[I]) mo.Option[J],
 ) mo.Option[J] {
-	return operator9(
-		operator8(
-			operator7(
-				operator6(
-					operator5(
-						operator4(
-							operator3(
-								operator2(
-									operator1(source),
-								),
-							),
-						),
-					),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }
 
 func Pipe10[A any, B any, C any, D any, E any, F any, G any, H any, I any, J any, K any](
@@ -190,23 +123,6 @@ func Pipe10[A any, B any, C any, D any, E any, F any, G any, H any, I any, J any
 	operator9 func(mo.Option[I]) mo.Option[J],
 	operator10 func(mo.Option[J]) mo.Option[K],
 ) mo.Option[K] {
-	return operator10(
-		operator9(
-			operator8(
-				operator7(
-					operator6(
-						operator5(
-							operator4(
-								operator3(
-									operator2(
-										operator1(source),
-									),
-								),
-							),
-						),
-					),
-				),
-			),
-		),
-	)
+	_ = "STUB: not implemented"
+	return nil
 }

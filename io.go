@@ -1,11 +1,7 @@
 package mo
 
 // NewIO instanciates a new IO.
-func NewIO[R any](f f0[R]) IO[R] {
-	return IO[R]{
-		unsafePerform: f,
-	}
-}
+func NewIO[R any](f f0[R]) IO[R] { _ = "STUB: not implemented"; return nil }
 
 // IO represents a non-deterministic synchronous computation that
 // can cause side effects, yields a value of type `R` and never fails.
@@ -15,15 +11,14 @@ type IO[R any] struct {
 
 // Run execute the non-deterministic synchronous computation, with side effect.
 func (io IO[R]) Run() R {
-	return io.unsafePerform()
+	_ = "STUB: not implemented"
+	return *
+
+	// NewIO1 instanciates a new IO1.
+	new(R)
 }
 
-// NewIO1 instanciates a new IO1.
-func NewIO1[R any, A any](f f1[R, A]) IO1[R, A] {
-	return IO1[R, A]{
-		unsafePerform: f,
-	}
-}
+func NewIO1[R any, A any](f f1[R, A]) IO1[R, A] { _ = "STUB: not implemented"; return nil }
 
 // IO1 represents a non-deterministic synchronous computation that
 // can cause side effects, yields a value of type `R` and never fails.
@@ -32,16 +27,10 @@ type IO1[R any, A any] struct {
 }
 
 // Run execute the non-deterministic synchronous computation, with side effect.
-func (io IO1[R, A]) Run(a A) R {
-	return io.unsafePerform(a)
-}
+func (io IO1[R, A]) Run(a A) R { _ = "STUB: not implemented"; return *new(R) }
 
 // NewIO2 instanciates a new IO2.
-func NewIO2[R any, A any, B any](f f2[R, A, B]) IO2[R, A, B] {
-	return IO2[R, A, B]{
-		unsafePerform: f,
-	}
-}
+func NewIO2[R any, A any, B any](f f2[R, A, B]) IO2[R, A, B] { _ = "STUB: not implemented"; return nil }
 
 // IO2 represents a non-deterministic synchronous computation that
 // can cause side effects, yields a value of type `R` and never fails.
@@ -50,15 +39,12 @@ type IO2[R any, A any, B any] struct {
 }
 
 // Run execute the non-deterministic synchronous computation, with side effect.
-func (io IO2[R, A, B]) Run(a A, b B) R {
-	return io.unsafePerform(a, b)
-}
+func (io IO2[R, A, B]) Run(a A, b B) R { _ = "STUB: not implemented"; return *new(R) }
 
 // NewIO3 instanciates a new IO3.
 func NewIO3[R any, A any, B any, C any](f f3[R, A, B, C]) IO3[R, A, B, C] {
-	return IO3[R, A, B, C]{
-		unsafePerform: f,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // IO3 represents a non-deterministic synchronous computation that
@@ -68,15 +54,12 @@ type IO3[R any, A any, B any, C any] struct {
 }
 
 // Run execute the non-deterministic synchronous computation, with side effect.
-func (io IO3[R, A, B, C]) Run(a A, b B, c C) R {
-	return io.unsafePerform(a, b, c)
-}
+func (io IO3[R, A, B, C]) Run(a A, b B, c C) R { _ = "STUB: not implemented"; return *new(R) }
 
 // NewIO4 instanciates a new IO4.
 func NewIO4[R any, A any, B any, C any, D any](f f4[R, A, B, C, D]) IO4[R, A, B, C, D] {
-	return IO4[R, A, B, C, D]{
-		unsafePerform: f,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // IO4 represents a non-deterministic synchronous computation that
@@ -86,15 +69,12 @@ type IO4[R any, A any, B any, C any, D any] struct {
 }
 
 // Run execute the non-deterministic synchronous computation, with side effect.
-func (io IO4[R, A, B, C, D]) Run(a A, b B, c C, d D) R {
-	return io.unsafePerform(a, b, c, d)
-}
+func (io IO4[R, A, B, C, D]) Run(a A, b B, c C, d D) R { _ = "STUB: not implemented"; return *new(R) }
 
 // NewIO5 instanciates a new IO5.
 func NewIO5[R any, A any, B any, C any, D any, E any](f f5[R, A, B, C, D, E]) IO5[R, A, B, C, D, E] {
-	return IO5[R, A, B, C, D, E]{
-		unsafePerform: f,
-	}
+	_ = "STUB: not implemented"
+	return nil
 }
 
 // IO5 represents a non-deterministic synchronous computation that
@@ -105,5 +85,6 @@ type IO5[R any, A any, B any, C any, D any, E any] struct {
 
 // Run execute the non-deterministic synchronous computation, with side effect.
 func (io IO5[R, A, B, C, D, E]) Run(a A, b B, c C, d D, e E) R {
-	return io.unsafePerform(a, b, c, d, e)
+	_ = "STUB: not implemented"
+	return *new(R)
 }
